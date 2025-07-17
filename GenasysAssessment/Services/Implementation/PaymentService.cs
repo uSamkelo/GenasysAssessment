@@ -7,7 +7,13 @@ namespace GenasysAssessment.Services.Implementation
     {
         public PaymentResult ProcessPayment(int orderId, decimal amount)
         {
-            throw new NotImplementedException(); // WIP to be implemented later for processing payments
+            // Simulate payment processing
+            if (amount <= 0)
+                return new PaymentResult { Success = false, Error = "Invalid amount." };
+            // Randomly fail for demonstration
+            if (amount > 10000) // Simulate failure for large amounts
+                return new PaymentResult { Success = false, Error = "Payment declined." };
+            return new PaymentResult { Success = true, TransactionId = Guid.NewGuid().ToString() };
         }
     }
 }

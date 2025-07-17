@@ -32,6 +32,7 @@ try
     var context = services.GetRequiredService<ApplicationDataContext>();
     context.Database.OpenConnection();
     context.Database.EnsureCreated();
+    SeedData.Initialize(context); // Seed the database
 }
 catch (Exception ex)
 {

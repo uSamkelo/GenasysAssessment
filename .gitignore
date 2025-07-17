@@ -361,3 +361,7 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/GenasysAssessment/appsettings.json
+/GenasysAssessment/GenasysAssessment.db
+/GenasysAssessment/GenasysAssessment.db-shm
+/GenasysAssessment/GenasysAssessment.db-wal

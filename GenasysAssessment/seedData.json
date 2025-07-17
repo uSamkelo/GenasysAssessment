@@ -1,0 +1,65 @@
+{
+  "orders": [
+    {
+      "id": 1,
+      "customerId": 1,
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 2,
+          "unitPrice": 19.99
+        },
+        {
+          "productId": 2,
+          "quantity": 1,
+          "unitPrice": 49.99
+        }
+      ],
+      "totalAmount": 89.97,
+      "status": "pending",
+      "createdAt": "2024-06-01T10:00:00Z",
+      "updatedAt": "2024-06-01T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "customerId": 2,
+      "items": [
+        {
+          "productId": 3,
+          "quantity": 5,
+          "unitPrice": 5.50
+        }
+      ],
+      "totalAmount": 27.50,
+      "status": "confirmed",
+      "createdAt": "2024-06-02T11:30:00Z",
+      "updatedAt": "2024-06-02T12:00:00Z"
+    }
+  ],
+  "inventoryItems": [
+    {
+      "productId": 1,
+      "availableQuantity": 100,
+      "reservedQuantity": 10
+    },
+    {
+      "productId": 2,
+      "availableQuantity": 50,
+      "reservedQuantity": 5
+    }
+  ],
+  "paymentTransactions": [
+    {
+      "transactionId": "tx-001",
+      "orderId": 1,
+      "amount": 89.97,
+      "status": "completed"
+    },
+    {
+      "transactionId": "tx-002",
+      "orderId": 2,
+      "amount": 27.50,
+      "status": "pending"
+    }
+  ]
+}
